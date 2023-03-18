@@ -180,6 +180,117 @@ html {
   cursor: pointer;
 }
 
+.more {
+  background-image: url("../img/more-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.more__top {
+  position: relative;
+  padding-top: 70px;
+  margin-bottom: 220px;
+  margin-left: 70px;
+}
+
+.more__title {
+  margin-bottom: 20px;
+  margin-left: 120px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #242020;
+}
+
+.more__video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 549px;
+  height: 374px;
+  background-image: url("../img/more-video-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.more__video-play {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.more__video-play:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.more__girl {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.more__bottom {
+  margin-bottom: 30px;
+}
+
+.more__blade {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.more__girl-little {
+  position: absolute;
+  top: -154px;
+  left: 226px;
+}
+
+.more__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 18px;
+}
+
+.more__social-link svg path {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.more__social-link:hover svg path {
+  fill: #FF82E3;
+}
+
+.container--more {
+  max-width: 1146px;
+}
+
 .footer {
   padding: 40px 0;
   background-color: #0F0E0E;
