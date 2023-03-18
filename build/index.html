@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blade&Soul</title>
+  <title>Steel&Heart</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -39,13 +40,126 @@
 
   <!-- Main Page -->
   <main class="main">
+    <section class="hero">
+  <div class="container container--hero">
+    <h1 class="hero__title">
+      Steel&Heart
+    </h1>
+
+    <div class="hero__inner">
+      <div class="hero__start">
+        <div class="hero__start-create">
+          <h4 class="hero__start-title">
+            Start Your Adventure
+          </h4>
+
+          <p class="hero__start-descr">
+            Create Free Account
+          </p>
+        </div>
+
+        <form class="hero__form" action="#">
+          <div class="hero__form-input-container">
+            <input class="hero__form-input" type="text" placeholder="Enter the code">
+          </div>
+
+          <button type="button" class="hero__form-btn">Start Your Adventure</button>
+        </form>
+      </div>
+
+      <div class="hero__pictures">
+        <div class="hero__picture">
+          <img class="hero__picture-img" src="./img/hero-img-1.png" alt="start pictures">
+        </div>
+        <div class="hero__picture">
+          <img class="hero__picture-img" src="./img/hero-img-2.png" alt="start pictures">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="slider">
+  <h3 class="slider__title">
+    Start Your Adventure
+  </h3>
+
+  <div class="slider__container swiper-container">
+    <div class="slider__wrapper swiper-wrapper">
+      <div class="slider__slide swiper-slide">
+        <img class="slider__slide-img" src="./img/slider-img-1.png" alt="slider slide img">
+      </div>
+
+      <div class="slider__slide swiper-slide">
+        <img class="slider__slide-img" src="./img/slider-img-2.png" alt="slider slide img">
+      </div>
+
+      <div class="slider__slide swiper-slide">
+        <img class="slider__slide-img" src="./img/slider-img-3.png" alt="slider slide img">
+      </div>
+
+      <div class="slider__slide swiper-slide">
+        <img class="slider__slide-img" src="./img/slider-img-1.png" alt="slider slide img">
+      </div>
+
+      <div class="slider__slide swiper-slide">
+        <img class="slider__slide-img" src="./img/slider-img-2.png" alt="slider slide img">
+      </div>
+
+    </div>
+
+    <div class="slider__arrow-prev">
+      <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_20_138)">
+          <rect width="94" height="94" fill="white" fill-opacity="0.5" />
+          <path d="M46.5 18.375V31.5H72.75V61.5H46.5V74.625L18.375 46.5L46.5 18.375Z" fill="#383838" />
+        </g>
+        <defs>
+          <clipPath id="clip0_20_138">
+            <rect width="94" height="94" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="slider__arrow-next">
+      <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_20_140)">
+          <rect width="94" height="94" fill="white" fill-opacity="0.5" />
+          <path d="M46.25 19V32.125H20V62.125H46.25V75.25L74.375 47.125L46.25 19Z" fill="#383838" />
+        </g>
+        <defs>
+          <clipPath id="clip0_20_140">
+            <rect width="94" height="94" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="slider__pagination"></div>
+  </div>
+</section>
+    <section class="personage">
+  <div class="container container--personage">
+    <div class="personage__inner">
+      <h3 class="personage__title">
+        Start Your Adventure
+      </h3>
+
+      <div class="personage__list">
+        <div class="personage__item">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <section class="more">
   <div class="container container--more">
     <div class="more__inner">
       <div class="more__top">
-        <h3 class="more__title">
+        <h4 class="more__title">
           Start Your Adventure
-        </h3>
+        </h4>
 
         <div class="more__video">
           <img class="more__video-play" src="./img/more-video-play.png" alt="video play">
@@ -58,6 +172,9 @@
 
   <div class="more__bottom">
     <div class="more__blade">
+      <h3 class="more__blade-title">
+        Steel&Heart
+      </h3>
       <img class="more__blade-img" src="./img/more-blade.png" alt="blade and soul">
       <img class="more__girl-little" src="./img/more-girl-little.png" alt="girl">
     </div>
@@ -77,64 +194,9 @@
         </a>
       </li>
       <li class="more__social"><a class="more__social-link" href="#">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM24 12C30.6 12 36 17.4 36 24C36 30 31.65 35.1 25.65 36V27.45H28.5L29.1 24H25.8V21.75C25.8 20.85 26.25 19.95 27.75 19.95H29.25V16.95C29.25 16.95 27.9 16.65 26.55 16.65C23.85 16.65 22.05 18.3 22.05 21.3V24H19.05V27.45H22.05V35.85C16.35 34.95 12 30 12 24C12 17.4 17.4 12 24 12Z"
-              fill="#171717" />
-          </svg>
-
-        </a>
-      </li>
-      <li class="more__social"><a class="more__social-link" href="#">
           <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M0 24C0 10.7452 10.5213 0 23.5 0C36.4787 0 47 10.7452 47 24C47 37.2548 36.4787 48 23.5 48C10.5213 48 0 37.2548 0 24ZM32.4594 17.25C33.4875 17.1 34.3687 16.95 35.25 16.5C34.6625 17.55 33.7812 18.45 32.7531 19.05C33.0469 26.1 28.0531 33.75 19.0938 33.75C16.45 33.75 13.9531 32.85 11.75 31.5C14.2469 31.8 16.8906 31.05 18.6531 29.7C16.45 29.7 14.6875 28.2 14.1 26.25C14.8344 26.4 15.5688 26.25 16.3031 26.1C14.1 25.5 12.4844 23.4 12.4844 21.15C13.2188 21.45 13.9531 21.75 14.6875 21.75C12.6313 20.25 11.8969 17.4 13.2188 15.15C15.7156 18.15 19.2406 20.1 23.2063 20.25C22.4719 17.25 24.8219 14.25 27.9062 14.25C29.2281 14.25 30.55 14.85 31.4312 15.75C32.6062 15.45 33.6344 15.15 34.5156 14.55C34.2219 15.75 33.4875 16.65 32.4594 17.25Z"
-              fill="#171717" />
-          </svg>
-
-        </a>
-      </li>
-      <li class="more__social"><a class="more__social-link" href="#">
-          <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M31.896 24.7583L28.5389 28.1154H25.1817L22.2442 31.0529V28.1154H18.4675V15.5261H31.896V24.7583ZM29.3782 18.4636H27.6996V23.4993H29.3782V18.4636ZM23.0835 18.4636H24.7621V23.4993H23.0835V18.4636Z"
-              fill="#171717" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M23.5 0C36.4787 0 47 10.5213 47 23.5C47 36.4787 36.4787 47 23.5 47C10.5213 47 0 36.4787 0 23.5C0 10.5213 10.5213 0 23.5 0ZM17.6282 13.8476L13.4317 18.044V33.1511H18.4675V37.3476L22.6639 33.1511H26.021L33.5746 25.5976V13.8476H17.6282Z"
-              fill="#171717" />
-          </svg>
-
-        </a>
-      </li>
-      <li class="more__social"><a class="more__social-link" href="#">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM12.3 19.95V36H17.4V19.95H12.3ZM12 14.85C12 16.5 13.2 17.7 14.85 17.7C16.5 17.7 17.7 16.5 17.7 14.85C17.7 13.2 16.5 12 14.85 12C13.35 12 12 13.2 12 14.85ZM30.9 36H35.7V26.1C35.7 21.15 32.7 19.5 29.85 19.5C27.3 19.5 25.5 21.15 25.05 22.2V19.95H20.25V36H25.35V27.45C25.35 25.2 26.85 24 28.35 24C29.85 24 30.9 24.75 30.9 27.3V36Z"
-              fill="#171717" />
-          </svg>
-
-        </a>
-      </li>
-      <li class="more__social"><a class="more__social-link" href="#">
-          <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M27.3188 24L21.15 20.4V27.6L27.3188 24Z" fill="#171717" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0 24C0 10.7452 10.5213 0 23.5 0C36.4787 0 47 10.7452 47 24C47 37.2548 36.4787 48 23.5 48C10.5213 48 0 37.2548 0 24ZM32.6063 16.05C33.6344 16.35 34.3688 17.1 34.6625 18.15C35.25 20.1 35.25 24 35.25 24C35.25 24 35.25 27.9 34.8094 29.85C34.5156 30.9 33.7812 31.65 32.7531 31.95C30.8437 32.4 23.5 32.4 23.5 32.4C23.5 32.4 16.0094 32.4 14.2469 31.95C13.2187 31.65 12.4844 30.9 12.1906 29.85C11.75 27.9 11.75 24 11.75 24C11.75 24 11.75 20.1 12.0437 18.15C12.3375 17.1 13.0719 16.35 14.1 16.05C16.0094 15.6 23.3531 15.6 23.3531 15.6C23.3531 15.6 30.8438 15.6 32.6063 16.05Z"
-              fill="#171717" />
-          </svg>
-
-        </a>
-      </li>
-      <li class="more__social"><a class="more__social-link" href="#">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M24 28.2C21.75 28.2 19.8 26.4 19.8 24C19.8 21.75 21.6 19.8 24 19.8C26.25 19.8 28.2 21.6 28.2 24C28.2 26.25 26.25 28.2 24 28.2Z"
-              fill="#171717" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M29.1 13.8H18.9C17.7 13.95 17.1 14.1 16.65 14.25C16.05 14.4 15.6 14.7 15.15 15.15C14.7939 15.5061 14.6257 15.8622 14.4223 16.2926C14.3687 16.406 14.3126 16.5249 14.25 16.65C14.2268 16.7196 14.2 16.7928 14.1713 16.8713C14.0144 17.3 13.8 17.8856 13.8 18.9V29.1C13.95 30.3 14.1 30.9 14.25 31.35C14.4 31.95 14.7 32.4 15.15 32.85C15.5061 33.2061 15.8622 33.3743 16.2926 33.5777C16.4061 33.6313 16.5248 33.6874 16.65 33.75C16.7196 33.7732 16.7928 33.8 16.8713 33.8287C17.3 33.9856 17.8856 34.2 18.9 34.2H29.1C30.3 34.05 30.9 33.9 31.35 33.75C31.95 33.6 32.4 33.3 32.85 32.85C33.2061 32.4939 33.3743 32.1378 33.5777 31.7074C33.6313 31.5939 33.6874 31.4752 33.75 31.35C33.7732 31.2804 33.8 31.2072 33.8287 31.1287C33.9856 30.7 34.2 30.1144 34.2 29.1V18.9C34.05 17.7 33.9 17.1 33.75 16.65C33.6 16.05 33.3 15.6 32.85 15.15C32.4939 14.7939 32.1378 14.6257 31.7074 14.4223C31.5941 14.3688 31.475 14.3125 31.35 14.25C31.2804 14.2268 31.2072 14.2 31.1287 14.1713C30.7 14.0144 30.1144 13.8 29.1 13.8ZM24 17.55C20.4 17.55 17.55 20.4 17.55 24C17.55 27.6 20.4 30.45 24 30.45C27.6 30.45 30.45 27.6 30.45 24C30.45 20.4 27.6 17.55 24 17.55ZM32.1 17.4C32.1 18.2284 31.4284 18.9 30.6 18.9C29.7716 18.9 29.1 18.2284 29.1 17.4C29.1 16.5716 29.7716 15.9 30.6 15.9C31.4284 15.9 32.1 16.5716 32.1 17.4Z"
-              fill="#171717" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM18.9 11.55H29.1C30.45 11.7 31.35 11.85 32.1 12.15C33 12.6 33.6 12.9 34.35 13.65C35.1 14.4 35.55 15.15 35.85 15.9C36.15 16.65 36.45 17.55 36.45 18.9V29.1C36.3 30.45 36.15 31.35 35.85 32.1C35.4 33 35.1 33.6 34.35 34.35C33.6 35.1 32.85 35.55 32.1 35.85C31.35 36.15 30.45 36.45 29.1 36.45H18.9C17.55 36.3 16.65 36.15 15.9 35.85C15 35.4 14.4 35.1 13.65 34.35C12.9 33.6 12.45 32.85 12.15 32.1C11.85 31.35 11.55 30.45 11.55 29.1V18.9C11.7 17.55 11.85 16.65 12.15 15.9C12.6 15 12.9 14.4 13.65 13.65C14.4 12.9 15.15 12.45 15.9 12.15C16.65 11.85 17.55 11.55 18.9 11.55Z"
               fill="#171717" />
           </svg>
 
@@ -151,13 +213,8 @@
   <div class="container container--footer">
     <div class="footer__inner">
       <p class="footer__copy">
-        © 2022 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.
+        © 2023 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.
       </p>
-
-      <div class="footer__links">
-        <a class="footer__link" href="#" target="_blank">Legal Documentation</a>
-        <a class="footer__link" href="#" target="_blank">Privacy Policy</a>
-      </div>
 
     </div>
   </div>
@@ -165,6 +222,7 @@
 
 </body>
 
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>

@@ -2,6 +2,12 @@
   background-image: url('../img/more-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 40px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint768) {
+    padding: 100px 0;
+  }
 
   // .more__inner
 
@@ -14,6 +20,16 @@
     padding-top: 70px;
     margin-bottom: 220px;
     margin-left: 70px;
+
+    @media (max-width: $breakpoint992) {
+      margin-left: 0;
+      margin-bottom: 160px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 60px;
+      padding-top: 0;
+    }
   }
 
   // .more__title
@@ -25,6 +41,16 @@
     font-size: 32px;
     line-height: 32px;
     color: #242020;
+
+    @media (max-width: $breakpoint768) {
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+
+    @media (max-width:580px) {
+      font-size: 26px;
+      line-height: 28px;
+    }
   }
 
   // .more__video
@@ -39,6 +65,25 @@
     background-image: url('../img/more-video-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 2;
+
+    @media (max-width: $breakpoint768) {
+      margin: 0 auto;
+    }
+
+    @media (max-width:580px) {
+      width: 440px;
+      height: 320px;
+      background-size: contain;
+      object-fit: cover;
+    }
+
+    @media (max-width: $breakpoint480) {
+      background-image: url('../img/more-video-bg-mobile.png');
+      max-width: 100%;
+      width: 100%;
+      background-size: cover;
+    }
   }
 
   // .more__video-play
@@ -50,6 +95,18 @@
     &:hover {
       transform: scale(1.1);
     }
+
+    @media (max-width:580px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   // .more__girl
@@ -58,6 +115,20 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    @media (max-width: 1200px) {
+      right: -100px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
   }
 
   // .more__bottom
@@ -77,16 +148,63 @@
     margin: 0 auto;
   }
 
+  &__blade-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'jsMath-cmbx10';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    color: #fff;
+    z-index: 2;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
   // .more__blade-img
 
-  &__blade-img {}
+  &__blade-img {
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @media (max-width: $breakpoint992) {
+      min-height: 140px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      min-height: 100px;
+    }
+  }
 
   // .more__girl-little
 
   &__girl-little {
     position: absolute;
     top: -154px;
-    left: 226px;
+    left: 200px;
+
+    @media (max-width: 1200px) {
+      top: -180px;
+      left: 160px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      top: -220px;
+      left: 10%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
   }
 
   // .more__socials

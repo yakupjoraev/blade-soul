@@ -55,3 +55,34 @@ function fixedNav() {
 }
 window.addEventListener('scroll', fixedNav)
 
+
+const swiper = new Swiper(".slider__container", {
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  // loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  slideActiveClass: "active",
+  navigation: {
+    nextEl: ".slider__arrow-next",
+    prevEl: ".slider__arrow-prev",
+  },
+  pagination: {
+    el: ".slider__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+});
