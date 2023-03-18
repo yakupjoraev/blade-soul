@@ -57,8 +57,7 @@ window.addEventListener('scroll', fixedNav)
 
 const swiper = new Swiper(".slider__container", {
   spaceBetween: 20,
-  slidesPerView: 'auto',
-  // loop: true,
+  loop: true,
   grabCursor: true,
   centeredSlides: true,
   slideActiveClass: "active",
