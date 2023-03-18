@@ -3,8 +3,12 @@
   padding: 100px 0 35px 0px;
   background-image: url('../img/slider-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 700px;
   background-position: top left;
+
+  @media (max-width:1200px) {
+    background-size: cover;
+  }
 
   @media (max-width: $breakpoint480) {
     padding: 20px 0;

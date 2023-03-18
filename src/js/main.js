@@ -85,3 +85,23 @@ const swiper = new Swiper(".slider__container", {
     }
   }
 });
+
+const modal = new GraphModal();
+
+var customStopVideo = () => {
+  var iframe = document.querySelectorAll('iframe');
+  Array.prototype.forEach.call(iframe, iframe => {
+    iframe.contentWindow.postMessage(JSON.stringify({
+      event: 'command',
+      func: 'stopVideo'
+    }), '*');
+  });
+}
+
+window.addEventListener('click', function (event) {
+  var target = event.target
+  const btnCLose = this.document.querySelector('.js-modal-close')
+  if (!btnCLose.contains(event.target) || btnCLose === target) {
+    customStopVideo();
+  }
+})

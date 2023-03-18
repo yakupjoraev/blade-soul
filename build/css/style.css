@@ -112,6 +112,7 @@ html {
 }
 
 .main__body {
+  position: static !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,6 +128,23 @@ html {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-height: 100%;
+}
+
+.graph-modal__close {
+  right: 0;
+  top: -40px;
+  background-image: url("../img/cancel.svg");
+  outline: 0;
+}
+
+.graph-modal__container {
+  padding: 0;
+  height: 520px;
+}
+
+.youtube__iframe {
+  width: 100%;
+  height: 520px;
 }
 
 .navbar {
@@ -165,6 +183,10 @@ html {
   color: #242020;
 }
 
+.menu__item-link:hover {
+  color: #ff82e3;
+}
+
 .menu__item-link--btn {
   padding: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 130, 227, 0.8)), to(rgba(255, 255, 255, 0.8)));
@@ -173,6 +195,16 @@ html {
   -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.menu__item-link--btn:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #242020;
 }
 
 .burger {
@@ -181,10 +213,12 @@ html {
 }
 
 .hero {
-  padding-top: 110px;
+  padding-top: 24px;
+  width: 100%;
+  height: 800px;
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 826px;
   background-position: bottom right;
   overflow: hidden;
 }
@@ -324,10 +358,20 @@ html {
   -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  font-family: "Josefin Slab", serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
   color: #242020;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.hero__form-btn:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .hero__picture:nth-child(1) {
@@ -343,7 +387,7 @@ html {
   padding: 100px 0 35px 0px;
   background-image: url("../img/slider-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 700px;
   background-position: top left;
 }
 
@@ -477,7 +521,85 @@ html {
   border-radius: 2px;
 }
 
+.personage {
+  position: relative;
+  padding: 80px 0 0;
+  height: 878px;
+  background-image: url("../img/bgg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 878px;
+  z-index: 2;
+}
+
+.personage__inner {
+  text-align: center;
+}
+
+.personage__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.personage__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.personage__item-title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.container--personage {
+  max-width: 1100px;
+}
+
+.personage__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 130, 227, 0.8)), to(rgba(255, 255, 255, 0.8)));
+  background: -o-linear-gradient(top, rgba(255, 130, 227, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(255, 130, 227, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #242020;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.personage__link:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .more {
+  margin-top: -116px;
+  padding: 62px 0 100px;
   background-image: url("../img/more-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -660,9 +782,22 @@ html {
   max-width: 1200px;
 }
 
+@media (max-width: 1449.98px) {
+  .hero {
+    background-size: 100% 826px;
+  }
+
+  .hero__inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero {
-    padding-top: 20px;
+    height: 722px;
+    background-size: 100% 745px;
   }
 
   .hero__inner {
@@ -677,6 +812,14 @@ html {
 
   .hero__form {
     margin-left: 30px;
+  }
+
+  .hero__picture:nth-child(2) {
+    margin-top: -70px;
+  }
+
+  .slider {
+    background-size: cover;
   }
 
   .slider__container {
@@ -703,6 +846,15 @@ html {
     height: 60px;
   }
 
+  .personage {
+    height: 734px;
+    background-size: 100% 745px;
+  }
+
+  .personage__item-img {
+    width: 200px;
+  }
+
   .more__girl {
     right: -100px;
   }
@@ -718,7 +870,28 @@ html {
   }
 }
 
+@media (max-width: 1200px) and (max-width: 991.98px) {
+  .hero__picture:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 991.98px) {
+  .graph-modal__container {
+    height: 400px;
+  }
+
+  .youtube__iframe {
+    height: 400px;
+  }
+
+  .hero {
+    height: 100%;
+    padding-top: 60px;
+    margin-top: -30px;
+    background-size: cover;
+  }
+
   .hero__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -913,9 +1086,13 @@ html {
 @media (max-width: 767.98px) {
   .hero {
     background-position: bottom left;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: -80px;
   }
 
   .hero__title {
+    margin-top: 40px;
     text-align: center;
     font-size: 42px;
     line-height: 46px;
@@ -951,8 +1128,19 @@ html {
     max-width: 250px;
   }
 
+  .personage {
+    height: 100%;
+    padding: 40px 0 140px;
+    background-size: cover;
+    background-position: center right;
+  }
+
+  .personage__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .more {
-    padding: 100px 0;
+    margin-top: -80px;
   }
 
   .more__top {
@@ -1008,6 +1196,14 @@ html {
 }
 
 @media (max-width: 479.98px) {
+  .graph-modal__container {
+    height: 280px;
+  }
+
+  .youtube__iframe {
+    height: 280px;
+  }
+
   .hero__start-create {
     width: 300px;
     height: 140px;
@@ -1059,6 +1255,23 @@ html {
 
   .slider__pagination .swiper-pagination-bullet-active {
     width: 20px;
+  }
+
+  .personage__title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .personage__list {
+    gap: 20px 0;
+  }
+
+  .personage__item-img {
+    width: 150px;
+  }
+
+  .personage__link {
+    width: 100%;
   }
 
   .more__video {

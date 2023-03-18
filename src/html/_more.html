@@ -7,7 +7,7 @@
         </h4>
 
         <div class="more__video">
-          <img class="more__video-play" src="./img/more-video-play.png" alt="video play">
+          <img class="more__video-play" src="./img/more-video-play.png" alt="video play" data-graph-path="youtube">
         </div>
 
         <img class="more__girl" src="./img/more-girl.png" alt="girl">
@@ -51,3 +51,18 @@
   </div>
 
 </section>
+
+<div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="youtube">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <!-- контент модального окна -->
+
+      <iframe class="youtube__iframe" width="560" height="315"
+        src="https://www.youtube.com/embed/lIfHchxiFD4?enablejsapi=1" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
