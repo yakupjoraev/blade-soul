@@ -86,7 +86,7 @@ const swiper = new Swiper(".slider__container", {
     }
   }
 });
-
+AOS.init();
 const modal = new GraphModal();
 
 var customStopVideo = () => {

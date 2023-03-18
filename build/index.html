@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="stylesheet" href="./css/graph-modal.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -43,12 +44,12 @@
   <main class="main">
     <section class="hero">
   <div class="container container--hero">
-    <h1 class="hero__title">
+    <h1 class="hero__title" data-aos="fade-up">
       Steel&Heart
     </h1>
 
     <div class="hero__inner">
-      <div class="hero__start">
+      <div class="hero__start" data-aos="fade-right">
         <div class="hero__start-create">
           <h4 class="hero__start-title">
             Start Your Adventure
@@ -69,17 +70,17 @@
       </div>
 
       <div class="hero__pictures">
-        <div class="hero__picture">
+        <div class="hero__picture" data-aos="fade-left">
           <img class="hero__picture-img" src="./img/hero-img-1.png" alt="start pictures">
         </div>
-        <div class="hero__picture">
+        <div class="hero__picture" data-aos="fade-left">
           <img class="hero__picture-img" src="./img/hero-img-2.png" alt="start pictures">
         </div>
       </div>
     </div>
   </div>
 </section>
-    <section class="slider">
+    <section class="slider" data-aos="fade-up">
   <h3 class="slider__title">
     Start Your Adventure
   </h3>
@@ -147,7 +148,7 @@
       </h3>
 
       <div class="personage__list">
-        <div class="personage__item">
+        <div class="personage__item" data-aos="flip-up">
           <h5 class="personage__item-title">
             Yuna
           </h5>
@@ -155,7 +156,7 @@
           <img class="personage__item-img" src="./img/personage-img-1.png" alt="personage img">
         </div>
 
-        <div class="personage__item">
+        <div class="personage__item" data-aos="flip-up">
           <h5 class="personage__item-title">
             Akira
           </h5>
@@ -163,7 +164,7 @@
           <img class="personage__item-img" src="./img/personage-img-2.png" alt="personage img">
         </div>
 
-        <div class="personage__item">
+        <div class="personage__item" data-aos="flip-up">
           <h5 class="personage__item-title">
             Saki
           </h5>
@@ -171,7 +172,7 @@
           <img class="personage__item-img" src="./img/personage-img-3.png" alt="personage img">
         </div>
 
-        <div class="personage__item">
+        <div class="personage__item" data-aos="flip-up">
           <h5 class="personage__item-title">
             Ren
           </h5>
@@ -179,7 +180,7 @@
           <img class="personage__item-img" src="./img/personage-img-4.png" alt="personage img">
         </div>
 
-        <div class="personage__item">
+        <div class="personage__item" data-aos="flip-up">
           <h5 class="personage__item-title">
             Haruka
           </h5>
@@ -187,7 +188,7 @@
           <img class="personage__item-img" src="./img/personage-img-5.png" alt="personage img">
         </div>
 
-        <div class="personage__item">
+        <div class="personage__item" data-aos="flip-up">
           <h5 class="personage__item-title">
             Tatsuya
           </h5>
@@ -207,16 +208,16 @@
           Start Your Adventure
         </h4>
 
-        <div class="more__video">
+        <div class="more__video" data-aos="fade-down-right">
           <img class="more__video-play" src="./img/more-video-play.png" alt="video play" data-graph-path="youtube">
         </div>
 
-        <img class="more__girl" src="./img/more-girl.png" alt="girl">
+        <img class="more__girl" src="./img/more-girl.png" alt="girl" data-aos="fade-down-left">
       </div>
     </div>
   </div>
 
-  <div class="more__bottom">
+  <div class="more__bottom" data-aos="fade-up">
     <div class="more__blade">
       <h3 class="more__blade-title">
         Steel&Heart
@@ -283,6 +284,7 @@
 
 </body>
 
+<script src="./js/aos.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/graph-modal.min.js"></script>
 <script src="./js/scripts.min.js"></script>
